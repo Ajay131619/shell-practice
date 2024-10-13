@@ -4,4 +4,8 @@
 #id -u -> it returns the user id
 
 userid=$(id -u)
-echo "userid = $userid"
+if[ $userid -ne 0 ]
+then
+echo "Please run this script with root user access (sudo access)"
+exit 1
+fi
