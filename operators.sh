@@ -1,4 +1,11 @@
 #!/bin/bash
+#it is about the usage of operators
+#operators are used to perform operations on variables and values
+#there are several types of operators in bash
+#1. Arithmetic operators
+
+#date:: Sun Oct 13 09:02:37 IST 2024
+
 echo "enter the the number1="
 read number1
 echo "enter the number2="
