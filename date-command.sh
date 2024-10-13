@@ -1,3 +1,3 @@
 #!/bin/bash
-date=$(date)
-echo "date :$date"
+date=$(id)
+echo "id :$date"
