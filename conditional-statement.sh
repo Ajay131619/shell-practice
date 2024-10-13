@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#date:Sun, Oct 13, 2024  2:26:03 PM
 #conditional statements 
 
 #greater than or less than for a given particular number
