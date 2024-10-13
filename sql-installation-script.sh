@@ -14,12 +14,12 @@ fi
 dnf list installed git
 
 
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then
-    
-     echo "Git already installed successfully,nothing to do!!"
-     exit 1
+    echo "installing git!!"
+    dnf install git -y
+     
 else
- echo "installing git!!"
- dnf install git -y
+    echo "Git already installed successfully,nothing to do!!"
+    exit 1
 fi
