@@ -3,15 +3,12 @@
 #here we are going to install mysql using shell script 
 #id -u -> it returns the user id
 
+userid=$(id -u)
 
-
-USERID=$(id -u)
-#echo "User ID is: $USERID"
-
-if [ $USERID -ne 0 ]
+if [ $userid -ne 0 ]
 then
-    echo "Please run this script with root priveleges"
+    echo "Please run this script with root user access (sudo access)"
     exit 1
 fi
 
-dnf install git -y 
+dnf install git -y
