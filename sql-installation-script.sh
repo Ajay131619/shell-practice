@@ -16,8 +16,9 @@ dnf install git -y
 
 if [ $? -eq 0 ]
 then
-    exit 1
+    
      echo "Git already installed successfully,nothing to do!!"
+     exit 1
 else
  echo "installing git!!"
  dnf install git -y
