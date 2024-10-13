@@ -12,3 +12,12 @@ then
 fi
 
 dnf install git -y
+
+
+if [ $? -eq 0 ]
+then
+     echo "Git already installed successfully,nothing to do!!"
+else
+ echo "installing git!!"
+ dnf install git -y
+fi
