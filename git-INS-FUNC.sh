@@ -40,8 +40,8 @@ installation(){
     fi
 }
 
-checkroot()
+checkroot
 
 dnf list installed git
 
-installation()
+installation
