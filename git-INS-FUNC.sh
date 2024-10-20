@@ -13,7 +13,7 @@ checkroot(){
 
 if [ $userid -ne 0 ]
 then 
-    echo " this program can only work with root user access"
+    echo "this program can only work with root user access"
     exit 1
 fi
 }
@@ -23,19 +23,19 @@ fi
 installation(){
     if [ $? -ne 0 ]
     then
-        echo"mysql is not there in your system. going to install it!"
+        echo "mysql is not there in your system. going to install it!"
         dnf install mysql -y
             if [ $? -ne 0 ]
             then
-                echo"mysql is not installed successfully!!"
-                echo"PLEASE CHECK IT ONCE"
+                echo "mysql is not installed successfully!!"
+                echo "PLEASE CHECK IT ONCE"
                 exit 1
             else
-                echo"mysql is installed successfully!!!!"
+                echo "mysql is installed successfully!!!!"
                 exit 1
             fi
     else
-        echo"mysql is already installed in your system"
+        echo "mysql is already installed in your system"
         exit 1
     fi
 }
