@@ -23,25 +23,25 @@ fi
 installation(){
     if [ $? -ne 0 ]
     then
-        echo"git is not there in your system. going to install it!"
-        dnf install git -y
+        echo"mysql is not there in your system. going to install it!"
+        dnf install mysql -y
             if [ $? -ne 0 ]
             then
-                echo"git is not installed successfully!!"
+                echo"mysql is not installed successfully!!"
                 echo"PLEASE CHECK IT ONCE"
                 exit 1
             else
-                echo"git is successfully!!!!"
+                echo"mysql is installed successfully!!!!"
                 exit 1
             fi
     else
-        echo"git is already installed in your system"
+        echo"mysql is already installed in your system"
         exit 1
     fi
 }
 
 checkroot
 
-dnf list installed git
+dnf list installed mysql
 
 installation
